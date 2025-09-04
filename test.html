@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ma Présentation</title>
+    <style>
+        html, body {
+            margin: 0; padding: 0; height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Vidéo en fond */
+        #bg-video {
+            position: fixed;
+            top: 0; 
+            left: 0;
+            width: 100vw; 
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.8); /* plus lumineux */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background: rgba(0, 0, 0, 0.3); /* plus clair */
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: transparent; /* transparent */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay muted loop id="bg-video" poster="fallback.jpg">
+        <source src="video.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+
+    <header>
+        <h1>Présentation IFApme</h1>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Qui suis-je ?</h2>
+            <p>Bonjour, je m'appelle <strong>Thomas</strong>. Je suis passionné par le développement web et l'informatique. Je cherche à m'améliorer chaque jour.</p>
+        </div>
+
+        <div class="section">
+            <h2>À propos de moi</h2>
+            <p>J'ai comme hobbies le basket, les jeux vidéo et le développement.</p>
+            <p>J'ai 15 ans, je suis étudiant à l'IFApme. J'aime coder et j'apprécie aussi les aspects financiers de la profession.</p>
+        </div>
+
+        <div class="section">
+            <h2>Mes compétences</h2>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="background-color: #3498db; margin: 5px 0; padding: 8px; border-radius: 5px;">HTML, CSS, JavaScript</li>
+                <li style="background-color: #3498db; margin: 5px 0; padding: 8px; border-radius: 5px;">Développement Front-End</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Me contacter</h2>
+            <p><strong>Email:</strong> Daykovdp@gmail.com</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/dayko555" target="_blank">Mon profil GitHub</a></p>
+            <p><strong>Numéro de téléphone:</strong> 0455113721</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
